@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     redirectButton.addEventListener("click", function() {
       // Redirect to another HTML page
-      window.location.href = "homePage.html";
+      window.location.href = "homepage.html";
     });
   });
 
