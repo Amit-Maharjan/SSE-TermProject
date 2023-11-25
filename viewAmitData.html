@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
+    <title>View Referral Form</title>
+    <link rel="icon" href="ico.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <img src="image.jfif" alt="Logo" style="width: 225px; height: 210px;">
+            <div>
+                <h1 class="text-right">Republic of the Marshall Islands</h1>
+                <h2 class="text-right">Public School System</h2>
+                <h3 class="text-right">Special Education Referral (SE-1)</h3>
+                <div>
+                    <button id="printButton">Print Page</button>
+                    <button id="toogleButton-another" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="justify">
+                This form is to be used to initiate the review of a student’s progress and any developmental, academic, or school problems. 
+                Please submit the completed form to the principal of the student’s school or the child's school attendance area school. 
+                Following a review by the school child study team, you will be informed of its disposition. 
+            </p>
+            <p class="justify">
+                <b>Instructions for Parents completing this form:</b><br>
+                Parents, please complete sections 1, 2, and 3. This referral will be reviewed to determine need for evaluation. 
+                Parents will be informed and asked to give their written consent before an evaluation is initiated or a change in program is made.
+            </p>
+            <p class="justify">
+                <b>Instructions for other Service Providers completing this form:</b><br>
+                School, Health Services, Head Start, and/or Other Agency Personnel, please complete sections 1, 2, and 3. 
+                As appropriate complete and attach the Screening Information Form (SE-2).  
+            </p>
+        </div>
+
+        <form id="se1Form">
+            <section class="section">
+                <h4>Section 1: Child/Student Being Referred</h4>
+                <div class="flex-container">
+                    <b>Full Name:</b>
+                    <div class="input-group">
+                        <label for="lastName">Last Name <span class="red">*</span></label>
+                        <input type="text" id="lastName" required disabled value="Maharjan">
+                    </div>
+                    <div class="input-group">
+                        <label for="firstName">First Name <span class="red">*</span></label>
+                        <input type="text" id="firstName" required disabled value="Amit">
+                    </div>
+                    <div class="input-group">
+                        <label for="middleInitial">Middle Initial</label>
+                        <input type="text" id="middleInitial" disabled value="">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <b style="margin-right: 12px;">Address:</b>
+                    <div class="input-group">
+                        <label for="village">Village <span class="red">*</span></label>
+                        <input type="text" id="village" required disabled value="Johnson City">
+                    </div>
+                    <div class="input-group">
+                        <label for="atoll">Atoll <span class="red">*</span></label>
+                        <input type="text" id="atoll" required disabled value="Caroline Islands">
+                    </div>
+                    <div class="input-group">
+                        <label for="poBox">P.O. Box No. <span class="red">*</span></label>
+                        <input type="text" id="poBox" required disabled value="37604">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="fathersName">Father's Name <span class="red">*</span></label>
+                        <input type="text" id="fathersName" required style="width: 300px" disabled value="Arjun Maharjan">
+                    </div>
+                    <div class="input-group">
+                        <label for="mothersName">Mother's Name <span class="red">*</span></label>
+                        <input type="text" id="mothersName" required style="width: 300px; margin-right: 100px;" disabled value="Indra Maharjan">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="guardiansName">Guardian's Name (if applicable)</label>
+                    <input type="text" id="guardiansName" style="width: 300px" disabled value="">
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="phone">Phone <span class="red">*</span></label>
+                        <input type="text" id="phone" required style="width: 300px" disabled value="+977-9849422470">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email <span class="red">*</span></label>
+                        <input type="email" id="email" required style="width: 300px; margin-right: 100px;" disabled value="maharjanamit8@gmail.com">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="sex">Sex <span class="red">*</span></label>
+                        <select id="sex" required style="width: 170px; height: 21px;" disabled value="Male">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                          </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="age">Age <span class="red">*</span></label>
+                        <input type="text" id="age" required disabled value="28">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateOfBirth">Date of Birth <span class="red">*</span></label>
+                        <input type="date" id="dateOfBirth" required style="width: 165px;" disabled value="1995-01-15">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="hospitalNo">Hospital No. <span class="red">*</span></label>
+                        <input type="text" id="hospitalNo" required disabled value="1234">
+                    </div>
+                    <div class="input-group">
+                        <label for="ssn">Social Security No. <span class="red">*</span></label>
+                        <input type="text" id="ssn" required disabled value="1234567890">
+                    </div>
+                    <div class="input-group">
+                        <label for="grade">Grade <span class="red">*</span></label>
+                        <input type="text" id="grade" required disabled value="A">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="primaryLanguage">Primary Language of Child/Student <span class="red">*</span></label>
+                    <input type="text" id="primaryLanguage" required style="width: 300px" disabled value="Nepali">
+                </div>
+                <div class="input-group">
+                    <label for="parentLanguage">Primary Language of Parent or Guardian <span class="red">*</span></label>
+                    <input type="text" id="parentLanguage" required style="width: 300px" disabled value="Nepali">
+                </div>
+            </section>
+            <section class="section">
+                <h4>Section 2: Reason for Referral (Please Check All Areas of Concern)</h4>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="vision" disabled value="isChecked" checked> Vision</td>
+                        <td><input type="checkbox" id="hearing" disabled value="isChecked" checked> Hearing</td>
+                        <td><input type="checkbox" id="physical" disabled> Physical</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="behavior" disabled> Behavior</td>
+                        <td><input type="checkbox" id="speech" disabled> Speech</td>
+                        <td><input type="checkbox" id="language" disabled> Language</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="medical" disabled> Medical</td>
+                        <td><input type="checkbox" id="academic" disabled> Academic</td>
+                        <td><input type="checkbox" id="learning" disabled> Learning in Subject Area</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="attendance" disabled> School Attendance</td>
+                        <td><input type="checkbox" id="other" disabled> Other (please specify)</td>
+                        <td><input type="text" id="otherConcern" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="checkbox" id="pre-school" disabled>  Pre-school age child’s total score on the Micronesia Inventory of Development (MID) 
+                            is in referral range (attach copy of child’s capital MID Scoring Sheet)</td>
+                        </td>
+                    </tr>
+                </table>
+                <div class="input-group">
+                    <label for="concernDescription">Please describe the area(s) of concern and what kind of help you
+                        think the child/student needs:</label>
+                    <textarea id="concernDescription" disabled>The child/student may benefit from additional tutoring or specialized instruction to improve their academic performance.</textarea>
+                </div>
+            </section>
+            <section class="section">
+                <h4>Section 3: Name of Person Making This Referral</h4>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="referralName">Full Name <span class="red">*</span></label>
+                        <input type="text" id="referralName" required style="width: 300px;" disabled value="Dawn Rowe">
+                    </div>
+                    <div class="input-group">
+                        <label for="relationship">Relationship to child/student or agency/position <span class="red">*</span></label>
+                        <input type="text" id="relationship" required style="width: 370px;" disabled value="Student">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="referralPhone">Phone <span class="red">*</span></label>
+                        <input type="text" id="referralPhone" required style="width: 300px;" disabled value="+1-423-439-717">
+                    </div>
+                    <div class="input-group">
+                        <label for="referralEmail">Email <span class="red">*</span></label>
+                        <input type="email" id="referralEmail" required style="width: 370px;" disabled value="roweda@etsu.edu">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="referralDate">Date <span class="red">*</span></label>
+                    <input type="date" id="referralDate" required style="width: 300px;" disabled value="2023-01-16">
+                </div>
+            </section>
+            <section class="section" id="last-section">
+                <h4>Section 4: For School Use Only</h4>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateReferralReceived">Date Referral Received</label>
+                        <input type="date" id="dateReferralReceived" disabled value="2023-01-16">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateChildStudyTeam">Date referred to child study team</label>
+                        <input type="date" id="dateChildStudyTeam" disabled value="2023-01-17">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateTeamRecommendation">Date of team recommendation</label>
+                        <input type="date" id="dateTeamRecommendation" disabled value="2023-01-20">
+                    </div>
+                    <div class="input-group">
+                        <label for="disposition">Disposition</label>
+                        <input type="text" id="disposition" disabled value="Disposed">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateDispositionNoticeReferring">Date of disposition notice to person
+                            referring</label>
+                        <input type="date" id="dateDispositionNoticeReferring" disabled value="2023-01-24">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateDispositionNoticeParent">Date of disposition notice to parent</label>
+                        <input type="date" id="dateDispositionNoticeParent" disabled value="2023-02-26">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateParentConsentEvaluation">Date of parental consent for evaluation</label>
+                        <input type="date" id="dateParentConsentEvaluation" disabled value="2023-01-30">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateReferralEvaluationTeam">Date of referral to evaluation team</label>
+                        <input type="date" id="dateReferralEvaluationTeam" disabled value="2023-02-07">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateEvaluationTeamRecommendation">Date of evaluation team recommendation</label>
+                        <input type="date" id="dateEvaluationTeamRecommendation" disabled value="2023-02-14">
+                    </div>
+                    <div class="input-group">
+                        <label for="recommendation">Recommendation</label>
+                        <input type="text" id="recommendation" disabled value="Dr. Roach Recommendaded">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateParentNoticeMeeting">Date of parent notice for meeting</label>
+                        <input type="date" id="dateParentNoticeMeeting" disabled value="2023-03-01">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateIEPMeeting">Date of IEP Meeting</label>
+                        <input type="date" id="dateIEPMeeting" disabled value="2023-03-15">
+                    </div>
+                </div>
+            </section>
+            <div class="flex-container">
+                <button type="button" id="homepage">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

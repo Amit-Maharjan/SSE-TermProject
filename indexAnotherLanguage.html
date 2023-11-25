@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ico.png" type="image/x-icon">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const redirectButton = document.getElementById("toogleButton");
+  
+            redirectButton.addEventListener("click", function() {
+            // Redirect to another HTML page
+            window.location.href = "index.html";
+    });
+  });
+    </script>
+    <title>SE-1 रेफरल फारम</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <img src="image.jfif" alt="Logo" style="width: 225px; height: 210px;">
+            <div>
+                <h1 class="text-right">मार्शल टापुहरूको गणतन्त्र</h1>
+                <h2 class="text-right">सार्वजनिक विद्यालय प्रणाली</h2>
+                <h3 class="text-right" style="margin-bottom: 3px;">विशेष शिक्षा सन्दर्भ (SE-1)</h3>
+                <div>
+                    <button id="printButton">पृष्ठ छाप्नुहोस्</button>
+                    <button id="toogleButton" style="margin-right: 10px ;">भाषा टगल गर्नुहोस्</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="justify">
+                यो फारम विद्यार्थीको प्रगति र कुनै पनि विकास, शैक्षिक, वा विद्यालय समस्याहरूको समीक्षा सुरु गर्न प्रयोग गरिन्छ। 
+                कृपया पूरा भएको फारम विद्यार्थीको विद्यालयको प्रधानाध्यापक वा बालबालिकाको विद्यालय उपस्थिति क्षेत्रको विद्यालयमा बुझाउनुहोस्। 
+                स्कूल बाल अध्ययन टोली द्वारा समीक्षा पछि, तपाईंलाई यसको स्वभावको बारेमा सूचित गरिनेछ।
+            </p>
+            <p class="justify">
+                <b>यो फारम भर्ने अभिभावकहरूको लागि निर्देशन:</b><br>
+                अभिभावकहरू, कृपया खण्डहरू 1, 2, र 3 पूरा गर्नुहोस्। यो रेफरललाई मूल्याङ्कनको आवश्यकता निर्धारण गर्न समीक्षा गरिनेछ।
+                अभिभावकहरूलाई सूचित गरिनेछ र मूल्याङ्कन प्रारम्भ गर्नु अघि वा कार्यक्रममा परिवर्तन गर्नु अघि उनीहरूको लिखित सहमति दिन आग्रह गरिनेछ।
+            </p>
+            <p class="justify">
+                <b>यो फारम पूरा गर्ने अन्य सेवा प्रदायकहरूको लागि निर्देशन:</b><br>
+                विद्यालय, स्वास्थ्य सेवाहरू, हेड स्टार्ट, र/वा अन्य एजेन्सी कर्मचारीहरू, कृपया खण्डहरू 1, 2, र 3 पूरा गर्नुहोस्।
+                उपयुक्त रूपमा पूरा गर्नुहोस् र स्क्रिनिङ जानकारी फारम (SE-2) संलग्न गर्नुहोस्।  
+            </p>
+        </div>
+
+        <form id="se1Form">
+            <section class="section">
+                <h4>खण्ड 1: बाल/विद्यार्थी सन्दर्भ गरिँदै</h4>
+                <div class="flex-container">
+                    <b>पुरा नाम:</b>
+                    <div class="input-group">
+                        <label for="lastName">थर <span class="red">*</span></label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="firstName">पहिलो नाम <span class="red">*</span></label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="middleInitial">मध्य सुरूवात</label>
+                        <input type="text" id="middleInitial">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <b style="margin-right: 12px;">ठेगाना:</b>
+                    <div class="input-group">
+                        <label for="village">गाउँ <span class="red">*</span></label>
+                        <input type="text" id="village" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="atoll">एटोल <span class="red">*</span></label>
+                        <input type="text" id="atoll" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="poBox">P.O बक्स नं. <span class="red">*</span></label>
+                        <input type="text" id="poBox" required>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="fathersName">बुवाको नाम <span class="red">*</span></label>
+                        <input type="text" id="fathersName" required style="width: 300px">
+                    </div>
+                    <div class="input-group">
+                        <label for="mothersName">आमाको नाम <span class="red">*</span></label>
+                        <input type="text" id="mothersName" required style="width: 300px; margin-right: 100px;">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="guardiansName">अभिभावकको नाम (यदि लागू हुन्छ)</label>
+                    <input type="text" id="guardiansName" style="width: 300px">
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="phone">फोन <span class="red">*</span></label>
+                        <input type="text" id="phone" required style="width: 300px">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">इमेल <span class="red">*</span></label>
+                        <input type="email" id="email" required style="width: 300px; margin-right: 100px;">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="sex">सेक्स <span class="red">*</span></label>
+                        <select id="sex" required style="width: 170px; height: 21px;">
+                            <option value="Male">पुरुष</option>
+                            <option value="Female">महिला</option>
+                            <option value="Others">अरू</option>
+                          </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="age">उमेर <span class="red">*</span></label>
+                        <input type="text" id="age" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="dateOfBirth">जन्म मिति <span class="red">*</span></label>
+                        <input type="date" id="dateOfBirth" required style="width: 165px;">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="hospitalNo">अस्पताल नं. <span class="red">*</span></label>
+                        <input type="text" id="hospitalNo" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="ssn">सामाजिक सुरक्षा नं. <span class="red">*</span></label>
+                        <input type="text" id="ssn" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="grade">ग्रेड <span class="red">*</span></label>
+                        <input type="text" id="grade" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="primaryLanguage">बाल/विद्यार्थीको प्राथमिक भाषा <span class="red">*</span></label>
+                    <input type="text" id="primaryLanguage" required style="width: 300px">
+                </div>
+                <div class="input-group">
+                    <label for="parentLanguage">अभिभावक वा अभिभावकको प्राथमिक भाषा <span class="red">*</span></label>
+                    <input type="text" id="parentLanguage" required style="width: 300px">
+                </div>
+            </section>
+            <section class="section">
+                <h4>खण्ड २: सन्दर्भको कारण (कृपया चिन्ताका सबै क्षेत्रहरू जाँच गर्नुहोस्)</h4>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="vision"> दृष्टि</td>
+                        <td><input type="checkbox" id="hearing"> सुनुवाइ</td>
+                        <td><input type="checkbox" id="physical"> शारीरिक</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="behavior"> व्यवहार</td>
+                        <td><input type="checkbox" id="speech"> भाषण</td>
+                        <td><input type="checkbox" id="language"> भाषा</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="medical"> मेडिकल</td>
+                        <td><input type="checkbox" id="academic"> शैक्षिक</td>
+                        <td><input type="checkbox" id="learning"> विषय क्षेत्रमा सिकाइ</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="attendance"> विद्यालय उपस्थिति</td>
+                        <td><input type="checkbox" id="other"> अन्य (कृपया निर्दिष्ट गर्नुहोस्)</td>
+                        <td><input type="text" id="otherConcern"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="checkbox" id="pre-school">  माइक्रोनेसिया इन्भेन्टरी अफ डेभलपमेन्ट (MID) मा प्रि-स्कूल उमेरका बालबालिकाको कुल स्कोर
+                            रेफरल दायरामा छ (बच्चाको क्यापिटल MID स्कोरिङ शीटको प्रतिलिपि संलग्न गर्नुहोस्)</td>
+                        </td>
+                    </tr>
+                </table>
+                <div class="input-group">
+                    <label for="concernDescription">कृपया सरोकारको क्षेत्र(हरू) र तपाईंलाई कस्तो प्रकारको मद्दत गर्छ भनी वर्णन गर्नुहोस्
+                        बच्चा/विद्यार्थीलाई आवश्यक छ भन्ने सोच्नुहोस्:</label>
+                    <textarea id="concernDescription"></textarea>
+                </div>
+            </section>
+            <section class="section">
+                <h4>खण्ड ३: यो रेफरल गर्ने व्यक्तिको नाम</h4>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="referralName">पुरा नाम <span class="red">*</span></label>
+                        <input type="text" id="referralName" required style="width: 300px;">
+                    </div>
+                    <div class="input-group">
+                        <label for="relationship">बच्चा/विद्यार्थी वा एजेन्सी/स्थितिसँगको सम्बन्ध <span class="red">*</span></label>
+                        <input type="text" id="relationship" required style="width: 370px;">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="referralPhone">फोन <span class="red">*</span></label>
+                        <input type="text" id="referralPhone" required style="width: 300px;">
+                    </div>
+                    <div class="input-group">
+                        <label for="referralEmail">इमेल <span class="red">*</span></label>
+                        <input type="email" id="referralEmail" required style="width: 370px;">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="referralDate">मिति <span class="red">*</span></label>
+                    <input type="date" id="referralDate" required style="width: 300px;">
+                </div>
+            </section>
+            <section class="section" id="last-section">
+                <h4>खण्ड 4: विद्यालय प्रयोगको लागि मात्र</h4>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateReferralReceived">मिति रेफरल प्राप्त भयो</label>
+                        <input type="date" id="dateReferralReceived">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateChildStudyTeam">बाल अध्ययन टोलीलाई उल्लेख गरिएको मिति</label>
+                        <input type="date" id="dateChildStudyTeam">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateTeamRecommendation">टोली सिफारिसको मिति</label>
+                        <input type="date" id="dateTeamRecommendation">
+                    </div>
+                    <div class="input-group">
+                        <label for="disposition">स्वभाव</label>
+                        <input type="text" id="disposition">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateDispositionNoticeReferring">व्यक्तिलाई डिस्पोजिसन सूचनाको मिति
+                            सन्दर्भ</label>
+                        <input type="date" id="dateDispositionNoticeReferring">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateDispositionNoticeParent">अभिभावकलाई डिस्पोजेसन सूचनाको मिति</label>
+                        <input type="date" id="dateDispositionNoticeParent">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateParentConsentEvaluation">मूल्याङ्कनका लागि अभिभावकको सहमतिको मिति</label>
+                        <input type="date" id="dateParentConsentEvaluation">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateReferralEvaluationTeam">मूल्याङ्कन टोलीलाई सिफारिस गर्ने मिति</label>
+                        <input type="date" id="dateReferralEvaluationTeam">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateEvaluationTeamRecommendation">मूल्याङ्कन टोली सिफारिसको मिति</label>
+                        <input type="date" id="dateEvaluationTeamRecommendation">
+                    </div>
+                    <div class="input-group">
+                        <label for="recommendation">सिफारिस</label>
+                        <input type="text" id="recommendation">
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="input-group">
+                        <label for="dateParentNoticeMeeting">बैठकको लागि अभिभावक सूचनाको मिति</label>
+                        <input type="date" id="dateParentNoticeMeeting">
+                    </div>
+                    <div class="input-group">
+                        <label for="dateIEPMeeting">IEP बैठकको मिति</label>
+                        <input type="date" id="dateIEPMeeting">
+                    </div>
+                </div>
+            </section>
+            <div class="flex-container">
+                <button type="submit">पेश गर्नुहोस्</button>
+                <button type="reset">रिसेट गर्नुहोस्</button>
+                <button type="button" id="homepage">रद्द गर्नुहोस्</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

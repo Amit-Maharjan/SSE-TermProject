@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-list {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    list-style-type: none;
+  }
+  
+  .user-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .user-name {
+    flex: 1;
+  }
+  
+  .action-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+
+.user-entry:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
